@@ -22,3 +22,11 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+year = input("Please enter a year: ")
+month = input("Please enter a month: ")
+
+if year == "" and month == "":
+	print(calendar.month(2020, 1))
+elif year == "" or month == "":
+	print(calendar(2020, month))
